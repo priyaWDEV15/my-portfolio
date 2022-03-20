@@ -1,0 +1,39 @@
+.project__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+.project__item{
+    padding: 1.2rem;
+    border-radius: 2rem;
+    background: rgb(233, 227, 227);
+    color: blue;
+    transition: 0.5s ease-in-out;
+}
+.project__item:hover{
+    border: 1px solid white;
+    background: var(--color-primary-variant);
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.project__item-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.project__item h3{
+    margin: 1.2rem 0 2rem;
+}
+.project__item-CTA{
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:1024px){
+    .project__container{
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+}
+@media screen and (max-width:600px){
+    
+}
